@@ -14,3 +14,10 @@ Development process for constructor injection
 1. Define the dependency interface and the class.
 2. Create constructor in your class for injections
 3. Configure the dependency injection with @Autowired annotation
+
+Setter injection
+Inject dependencies by calling setter methods of your class
+
+Development process
+1. Create a setter method in your lass for injections
+2. Configure the dependency injection with the @Autowired Annotation.

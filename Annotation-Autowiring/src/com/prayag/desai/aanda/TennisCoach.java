@@ -8,8 +8,23 @@ public class TennisCoach implements Coach {
 	
 	private FortuneService fortuneService;
 	
+	/*
+	THIS IS CONSTRUCTOR INJECTION
 	@Autowired
 	public TennisCoach(FortuneService thefortuneService) {
+		fortuneService = thefortuneService;
+	}
+	*/
+	
+	public TennisCoach() {
+		// default no-arg constructor
+		System.out.println("inside default no-arg constructor");
+	}
+	
+	// define a setter method
+	@Autowired
+	public void setFortuneService(FortuneService thefortuneService) {
+		System.out.println("Inside the setter method");
 		fortuneService = thefortuneService;
 	}
 	

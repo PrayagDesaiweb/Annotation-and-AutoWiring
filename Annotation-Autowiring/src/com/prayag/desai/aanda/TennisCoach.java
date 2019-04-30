@@ -28,6 +28,12 @@ public class TennisCoach implements Coach {
 		fortuneService = thefortuneService;
 	}
 	
+	@Autowired
+	public void thisisanewMethod(FortuneService thefortuneService) {
+		System.out.println("Inside the method dependency injection");
+		fortuneService = thefortuneService;
+	}
+	
 	@Override
 	public String getDailyWorkout() {
 			return "Practice forehand and top-spin";
